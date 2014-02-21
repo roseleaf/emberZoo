@@ -1,0 +1,9 @@
+<h2>Animals</h2>
+<div class="animals">
+	<ul>
+	{{#each model}}
+		<li>{{#link-to 'animal' this}}{{name}}{{/link-to}}</li>
+	{{/each}}
+	</ul>
+</div>
+{{outlet}}

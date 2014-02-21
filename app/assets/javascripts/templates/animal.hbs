@@ -1,0 +1,27 @@
+<div class="panel">
+	<h4>{{name}}</h4>
+	<div class="tile">
+		<label>Color</label><p>{{color}}</p>
+	</div>
+	<div class="tile">
+		<label>Classification</label><p>{{classification}}</p>
+	</div>
+	<div class="tile">
+		<label>Temperament</label><p>{{temperament}}</p>
+	</div>
+	<div class="tile">
+		<label>Diet</label><p>{{diet}}</p>
+	</div>
+	<div class="tile">
+		<label>Quantity</label><p>{{quantity_here}}</p>
+	</div>
+	<div class="tile">
+		<label>Endangered?</label><p>{{isEndangered}}</p>
+	</div>
+</div>
+{{#if isEditing}}
+  {{partial 'animal_edit'}}
+  <button class="button-bottom" {{action 'doneEditing'}}>Done</button>
+{{else}}
+  <button class="button-bottom" {{action 'edit'}}>Edit</button>
+{{/if}}
