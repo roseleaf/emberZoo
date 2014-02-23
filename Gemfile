@@ -8,7 +8,7 @@ gem 'active_model_serializers'
 gem 'ember-rails'
 gem 'ember-source', '1.3.0' # or the version you need
 # Use sqlite3 as the database for Active Record
-gem 'mysql2'
+gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
